@@ -1,0 +1,74 @@
+/* Home Page Specific Styles */
+.intro {
+  padding: var(--space-stack-lg) 0;
+}
+
+.intro__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .intro__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.intro__image-wrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.intro__image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-xl);
+}
+
+.services-preview {
+  background-color: var(--color-surface-container-low);
+  padding: var(--space-stack-lg) 0;
+}
+
+.services-preview__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.portfolio-preview {
+  padding: var(--space-stack-lg) 0;
+}
+
+.portfolio-preview__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.portfolio-preview__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-gutter);
+}
+
+@media (min-width: 768px) {
+  .portfolio-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-preview__grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

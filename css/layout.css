@@ -1,0 +1,65 @@
+/* Layout Styles */
+.container {
+  width: 100%;
+  max-width: var(--space-container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-margin-mobile);
+  padding-right: var(--space-margin-mobile);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--space-margin-desktop);
+    padding-right: var(--space-margin-desktop);
+  }
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: var(--space-gutter);
+}
+
+/* Mobile: 4 columns (default) */
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tablet: 8 columns */
+@media (min-width: 768px) {
+  .grid--md-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Desktop: 12 columns */
+@media (min-width: 1024px) {
+  .grid--lg-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/* Utility Classes */
+.section-padding {
+  padding-top: var(--space-stack-lg);
+  padding-bottom: var(--space-stack-lg);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-reveal), transform var(--transition-reveal);
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,25 @@
+/* Services Page Specific Styles */
+.services-grid {
+  padding: var(--space-stack-lg) 0;
+}
+
+.services-grid__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-gutter);
+}
+
+@media (min-width: 1024px) {
+  .services-grid__layout {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.comparison {
+  padding: var(--space-stack-lg) 0;
+}
+
+.comparison__header {
+  text-align: center;
+  margin-bottom: 48px;
+}

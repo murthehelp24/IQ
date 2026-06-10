@@ -1,0 +1,21 @@
+/* Portfolio Page Specific Styles */
+.portfolio-grid {
+  padding: var(--space-stack-lg) 0;
+}
+
+.portfolio-grid__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-gutter);
+}
+
+@media (min-width: 1024px) {
+  .portfolio-grid__layout {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.trust-stats {
+  padding: var(--space-stack-lg) 0;
+  background-color: var(--color-surface-container-low);
+}

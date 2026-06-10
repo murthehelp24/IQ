@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ไม่พบหน้านี้ (404 Not Found) | IQ Southeast OA</title>
+  
+  <!-- Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components/btn.css">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet">
+
+  <style>
+    .error-page {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--color-surface);
+    }
+    .error-page__content {
+      max-width: 500px;
+      padding: var(--space-margin-mobile);
+    }
+    .error-page__icon {
+      font-size: 80px;
+      color: var(--color-primary);
+      margin-bottom: 24px;
+    }
+    .error-page__title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+    .error-page__message {
+      color: var(--color-on-surface-variant);
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-page__content">
+      <span class="material-symbols-outlined error-page__icon">error</span>
+      <h1 class="error-page__title">404</h1>
+      <p class="error-page__message text-body-lg">ขออภัย เราไม่พบหน้าที่คุณกำลังมองหา หน้าเว็บอาจถูกย้ายหรือถูกลบออกไปแล้ว</p>
+      <a href="index.html" class="btn btn--primary btn--large">
+        <span class="material-symbols-outlined">home</span>
+        กลับหน้าแรก
+      </a>
+    </div>
+  </div>
+</body>
+</html>

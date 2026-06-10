@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อเรา | IQ Southeast OA อุดรธานี</title>
+  <meta name="description" content="ติดต่อ IQ Southeast OA อุดรธานี เพื่อขอใบเสนอราคาเช่าเครื่องถ่ายเอกสาร แจ้งซ่อม หรือปรึกษาโซลูชันสำนักงาน โทร 042-XXX-XXXX">
+  <link rel="canonical" href="https://www.iqsoutheast-udon.com/contact.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.iqsoutheast-udon.com/contact.html">
+  <meta property="og:title" content="ติดต่อเรา | IQ Southeast OA อุดรธานี">
+  <meta property="og:description" content="ติดต่อเราเพื่อขอใบเสนอราคาหรือบริการซ่อมบำรุง">
+  <meta property="og:image" content="https://www.iqsoutheast-udon.com/assets/images/og-contact.jpg">
+
+  <!-- JSON-LD Schema (ContactPoint) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "IQ Southeast OA Udon Thani",
+      "telephone": "042-XXX-XXXX",
+      "email": "contact@iqsoutheast-udon.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ตำบลหมากแข้ง อำเภอเมืองอุดรธานี",
+        "addressLocality": "อุดรธานี",
+        "postalCode": "41000",
+        "addressCountry": "TH"
+      }
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!-- Components -->
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/components/btn.css">
+  <link rel="stylesheet" href="css/components/contact-form.css">
+  <link rel="stylesheet" href="css/components/toast.css">
+
+  <!-- Page-specific -->
+  <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container container">
+      <a class="header__logo" href="index.html">IQ Southeast OA</a>
+      <nav class="header__nav">
+        <a class="header__nav-link" href="index.html">Home</a>
+        <a class="header__nav-link" href="portfolio.html">Portfolio</a>
+        <a class="header__nav-link" href="services.html">Services</a>
+        <a class="header__nav-link" href="about.html">About Us</a>
+        <a class="header__nav-link header__nav-link--active" href="contact.html">Contact Us</a>
+      </nav>
+      <a href="contact.html" class="btn btn--primary header__cta">Request Quote</a>
+      <button class="header__menu-toggle" aria-label="Toggle Menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Header Section -->
+      <section class="contact-header reveal">
+        <h1 class="text-headline-xl" style="color: var(--color-primary);">ติดต่อเรา</h1>
+        <p class="text-body-lg" style="color: var(--color-on-surface-variant); margin-top: 16px;">สอบถามข้อมูล ขอใบเสนอราคา หรือปรึกษาโซลูชันสำนักงาน เรายินดีให้บริการทุกวันจันทร์ - เสาร์</p>
+      </section>
+
+      <!-- Main Content Grid -->
+      <section class="contact-main section-padding">
+        <div class="contact-main__grid">
+          <!-- Contact Form (7 cols) -->
+          <div class="contact-main__form reveal" data-delay="100">
+            <form class="contact-form">
+              <h2 class="contact-form__title text-headline-md">ส่งข้อความถึงเรา</h2>
+              
+              <div class="contact-form__row contact-form__row--2-col">
+                <div class="contact-form__group">
+                  <label class="contact-form__label" for="name">ชื่อ-นามสกุล</label>
+                  <input class="contact-form__input" type="text" id="name" name="name" placeholder="ระบุชื่อของคุณ" required>
+                </div>
+                <div class="contact-form__group">
+                  <label class="contact-form__label" for="email">อีเมล</label>
+                  <input class="contact-form__input" type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+              </div>
+
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="subject">หัวข้อติดต่อ</label>
+                <select class="contact-form__select" id="subject" name="subject" required>
+                  <option value="" disabled selected>เลือกหัวข้อที่คุณต้องการติดต่อ</option>
+                  <option value="sales">สอบถามการเช่า/ซื้อเครื่องถ่ายเอกสาร</option>
+                  <option value="service">แจ้งซ่อม/บริการหลังการขาย</option>
+                  <option value="it">ปรึกษาโซลูชัน IT / Security</option>
+                  <option value="other">เรื่องอื่นๆ</option>
+                </select>
+              </div>
+
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="message">ข้อความ</label>
+                <textarea class="contact-form__textarea" id="message" name="message" rows="5" placeholder="ระบุรายละเอียดที่คุณต้องการสอบถาม" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--large contact-form__submit">
+                <span class="material-symbols-outlined">send</span>
+                ส่งข้อความ
+              </button>
+            </form>
+          </div>
+
+          <!-- Sidebar (5 cols) -->
+          <aside class="contact-main__sidebar reveal" data-delay="300">
+            <div class="contact-info">
+              <div class="contact-info__item">
+                <span class="material-symbols-outlined contact-info__icon">location_on</span>
+                <div class="contact-info__content">
+                  <span class="contact-info__label">ที่อยู่สำนักงาน</span>
+                  <span class="contact-info__text">บริษัท ไอคิว เซาท์อีสท์ โอเอ อุดรธานี จำกัด<br>ตำบลหมากแข้ง อำเภอเมืองอุดรธานี จังหวัดอุดรธานี 41000</span>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <span class="material-symbols-outlined contact-info__icon">call</span>
+                <div class="contact-info__content">
+                  <span class="contact-info__label">เบอร์โทรศัพท์</span>
+                  <span class="contact-info__text">042-XXX-XXXX (สำนักงาน)</span>
+                  <span class="contact-info__text">081-XXX-XXXX (ฝ่ายขาย)</span>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <span class="material-symbols-outlined contact-info__icon">mail</span>
+                <div class="contact-info__content">
+                  <span class="contact-info__label">อีเมล</span>
+                  <span class="contact-info__text">contact@iqsoutheast-udon.com</span>
+                  <span class="contact-info__text">support@iq-udon.co.th (ฝ่ายบริการ)</span>
+                </div>
+              </div>
+              <div class="contact-info__item">
+                <span class="material-symbols-outlined contact-info__icon">schedule</span>
+                <div class="contact-info__content">
+                  <span class="contact-info__label">เวลาทำการ</span>
+                  <span class="contact-info__text">จันทร์ - เสาร์: 08:30 - 17:30 น.</span>
+                  <span class="contact-info__text" style="color: var(--color-error);">หยุดวันอาทิตย์และวันหยุดนักขัตฤกษ์</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-placeholder">
+              <span class="material-symbols-outlined" style="font-size: 48px; color: var(--color-outline-variant); margin-bottom: 16px;">map</span>
+              <p class="text-label-md" style="color: var(--color-on-surface-variant);">Interactive Map Placeholder</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Toast -->
+  <div class="toast">
+    <span class="material-symbols-outlined toast__icon">check_circle</span>
+    <span class="toast__message">ส่งข้อความเรียบร้อยแล้ว ทีมงานจะติดต่อกลับโดยเร็วที่สุด</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html">IQ Southeast OA</a>
+          <p class="footer__tagline">ผู้นำด้านระบบสำนักงานอัตโนมัติและเทคโนโลยีการพิมพ์ในจังหวัดอุดรธานีและภาคอีสาน</p>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__links-title">Quick Links</h4>
+          <ul class="footer__links-list">
+            <li><a class="footer__link" href="index.html">หน้าแรก</a></li>
+            <li><a class="footer__link" href="portfolio.html">ผลงาน</a></li>
+            <li><a class="footer__link" href="services.html">บริการของเรา</a></li>
+            <li><a class="footer__link" href="about.html">เกี่ยวกับเรา</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__links-title">Services</h4>
+          <ul class="footer__links-list">
+            <li><a class="footer__link" href="services.html">เช่าเครื่องถ่ายเอกสาร</a></li>
+            <li><a class="footer__link" href="services.html">Managed Print Services</a></li>
+            <li><a class="footer__link" href="services.html">ซ่อมบำรุงและอะไหล่</a></li>
+            <li><a class="footer__link" href="services.html">IT Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__links-title">Contact Us</h4>
+          <div class="footer__contact-item">
+            <span class="material-symbols-outlined footer__contact-icon">location_on</span>
+            <span>ตำบลหมากแข้ง อำเภอเมืองอุดรธานี จังหวัดอุดรธานี 41000</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="material-symbols-outlined footer__contact-icon">call</span>
+            <span>042-XXX-XXXX</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="material-symbols-outlined footer__contact-icon">mail</span>
+            <span>contact@iqsoutheast-udon.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 IQ Southeast OA Udon Thani Co., Ltd. All rights reserved.</p>
+        <div class="footer__status">
+          <div class="footer__status-dot"></div>
+          <span>System Online</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/contact-form.js"></script>
+</body>
+</html>
